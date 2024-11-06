@@ -1,23 +1,28 @@
+package org.example.ex1;
+
+/*
+Sa se afiseze toate numerele de la 0 la 100.
+Numerele pare sa aibe o identare de un tab.
+ */
 public class Main {
-    public static void main(String[] args)
-    {
-        char ch='z';
-        System.out.println("Litera este:\n "  + ch);
+    public static void main(String[] args) {
+        for(int i = 0; i <= 100; i++) {
+            if(i % 2 == 0) { // conditie numere pare
+                System.out.println("\t" + i);
+                // nu am nevoie sa executi codul de mai jos
+                // sari direct la urmatorul i
+                continue;
+            }
 
-        int age = 20;
-        System.out.println("Vartsa este " + age +" ani");
+            System.out.println(i);
 
-        String name = "Marian";
-        age = 25;
-        System.out.println("Numele meu este " + name +" si am varsta de " + age + "\n" + "Acesta am fost eu!");
-        double pret = 400.43;
-        char dolar ='$';
-        System.out.println("Pretul iphone este " + pret + dolar);
-        System.out.println("Pretul iphone este " + pret + '$');
-        boolean adevar = age>0;
-        System.out.println("Conditia este " + adevar);
-        int temperatura = -10;
-        boolean stareTemperatura = temperatura>0;
-        System.out.println("Temperatura este pozitiva " + stareTemperatura);
+            System.out.println("Test");
+//            if(i % 2 == 0) { // conditie numere pare
+//                System.out.println("\t" + i);
+//            } else {
+//                System.out.println(i);
+//            }
+
+        }
     }
 }
